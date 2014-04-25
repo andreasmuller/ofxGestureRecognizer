@@ -7,11 +7,14 @@
  *
  */
 
-#import <Foundation/Foundation.h>  
+#import <Foundation/Foundation.h>
+#include "ofMain.h"
 
-
-@interface ofTapGestureRecognizer : NSObject {  
-    UITapGestureRecognizer *tapGestureRecognizer;  
+@interface ofTapGestureRecognizer : NSObject {
+    UITapGestureRecognizer *tapGestureRecognizer;
+	
+@public
+	ofEvent<ofMouseEventArgs> tapEvent;
 }  
 
 -(id)initWithView:(UIView*)view;  

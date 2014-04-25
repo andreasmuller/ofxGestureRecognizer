@@ -13,9 +13,9 @@
 
 // -------------------------------------------------
 class ofPinchGestureRecognizerArgs : public ofMouseEventArgs {
-public:
-    float scale;
-    float scaleDelta;
+	public:
+		float scale;
+		float scaleDelta;
 };
 
 // -------------------------------------------------

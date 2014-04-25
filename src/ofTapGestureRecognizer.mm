@@ -20,7 +20,17 @@
 
 -(void)handleTap:(UITapGestureRecognizer *) gr{  
     if([gr state] == UIGestureRecognizerStateRecognized){  
-        NSLog(@"tap!");  
+        //NSLog(@"tap!");
+		
+		//CGPoint currentLocation = [gr translationInView: gr.view ];
+		CGPoint currentLocation = [gr locationInView: gr.view ];
+		//CGPoint tapPoint = [sender locationInView:self.view];
+		
+		ofMouseEventArgs args;
+		args.x = currentLocation.x;
+		args.y = currentLocation.y;
+		
+		ofNotifyEvent(tapEvent, args);
     }  
 }  
 

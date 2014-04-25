@@ -58,9 +58,6 @@
 		args.type = ofMouseEventArgs::Released;
     }
 	
-
-
-	
 	ofNotifyEvent(pinchZoomEvent, args);
 }
 
